@@ -6,6 +6,9 @@ It's a message sending application implemented in C - Programming Language by us
     1. Linux OS (if you are windows user use WSL or any Virtual Machine with Linux installed)
     2. GCC compiler
     
+If you consider using WSL here is how you can install WSL and Ubuntu or any other distributor in your system
+https://learn.microsoft.com/en-us/windows/wsl/install
+    
 ## Installation
 
 Start by updating the package list
