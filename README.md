@@ -11,16 +11,34 @@ It's a message sending application implemented in C - Programming Language by us
 Start by updating the package list
 
 ```bash
-  $ sudo apt update
+  sudo apt update
 ```
 Install GCC compiler
 
 ```bash
-  $ sudo apt-get install gcc -y
+  sudo apt-get install gcc -y
 ```
 Check GCC version
 
 ```bash
-  $ gcc --version
+  gcc --version
 ```
 
+## Run the code
+
+First compile Server.c and Client.c as server and client
+
+```bash
+  gcc Server.c -o server
+```
+```bash
+  gcc Client.c -o client
+```
+Then run server
+```bash
+  ./server
+```
+Then run client in differnt terminal at same location (you can run same client to multiple terminal to connect more clients with the server)
+```bash
+  ./client
+```
