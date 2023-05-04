@@ -77,39 +77,6 @@ int main(void)
 			printf("\033[1;31m \n\n[X] you have been exited...\033[0m\n");
 			break;
 		}
-		
-		else if(strcmp(client_message, "SEND")==0){
-			printf("\033[1;36m [>] SENDING MESSAGE TO CLIENT... \033[0m\n");
-			
-			// Send the message to server:
-			if(send(socket_desc, client_message, strlen(client_message), 0) < 0){
-				printf("\033[1;31m [--] Unable to send message \033[0m\n");
-				return -1;
-			}
-			
-			// Get input from the user: client id
-			bzero(client_message, sizeof(client_message));
-			printf("\nEnter client id : ");
-			gets(client_message);
-			
-			// Send the message to server:
-			if(send(socket_desc, client_message, strlen(client_message), 0) < 0){
-				printf("\033[1;31m [--] Unable to send message \033[0m\n");
-				return -1;
-			}
-			
-			// Get input from the user: message
-			bzero(client_message, sizeof(client_message));
-			printf("Enter your message : ");
-			gets(client_message);
-			
-			printf("\n");
-			// Send the message to server:
-			if(send(socket_desc, client_message, strlen(client_message), 0) < 0){
-				printf("\033[1;31m [--] Unable to send message \033[0m\n");
-				return -1;
-			}
-		}
 		else{
 			// Send the message to server:
 			if(send(socket_desc, client_message, strlen(client_message), 0) < 0){
