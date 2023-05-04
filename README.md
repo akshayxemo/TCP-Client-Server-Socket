@@ -40,7 +40,7 @@ Then run client in differnt terminal at same location (you can run same client t
 ```bash
   ./client
 ```
-# Preview
+# Screenshots
 RUNNING SERVER AND CLIENT
 
 ![Screenshot 2023-05-04 200954](https://user-images.githubusercontent.com/83893825/236249880-afb74a8b-eceb-473f-8cf0-836ab7e2b1b6.png)
